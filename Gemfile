@@ -40,3 +40,4 @@ gem 'devise'
 gem 'paperclip'
 # Add 12factor for Heroku
 gem 'rails_12factor', group: :production
+gem 'aws-sdk'
