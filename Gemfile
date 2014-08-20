@@ -41,3 +41,4 @@ gem 'paperclip'
 # Add 12factor for Heroku
 gem 'rails_12factor', group: :production
 gem 'aws-sdk'
+gem 'stripe', '~> 1.8.3'
