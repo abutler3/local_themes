@@ -42,3 +42,4 @@ gem 'paperclip'
 gem 'rails_12factor', group: :production
 gem 'aws-sdk'
 gem 'stripe', '~> 1.8.3'
+gem 'httparty'

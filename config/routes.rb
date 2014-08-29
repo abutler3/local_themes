@@ -6,6 +6,11 @@ Rails.application.routes.draw do
 
   devise_for :users
   root :to => 'products#index'
+
+  get  '/buy/:permalink', to: 'transactions#new',      as: :show_buy
+  post '/buy/:permalink', to: 'transaction#create',    as: :buy
+  get  '/pickup/:guid',   to: 'transactions#pickup',   as: :pickup
+  get  '/download/:guid', to: 'transactions#download', as: :download
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
